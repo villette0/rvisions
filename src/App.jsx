@@ -45,6 +45,16 @@ function App() {
         <meta name="description" content="Medical Staffing Company"/>
         <meta name="keywords" content="medical,staffing"/>
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      <link
+        rel="icon"
+        sizes="192x192"
+        href="%PUBLIC_URL%/android-chrome-192X192.png"
+      />
+      <link
+        rel="icon"
+        sizes="512x512"
+        href="%PUBLIC_URL%/android-chrome-512X512.png"
+      />
         <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -62,7 +72,7 @@ function App() {
         sizes="16x16"
         href="%PUBLIC_URL%/favicon-16x16.png"
       />
-      <link rel="manifest" href="./site.webmanifest" />
+      <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
       </Helmet>
 
         <HelmetProvider>
