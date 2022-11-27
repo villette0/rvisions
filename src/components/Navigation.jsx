@@ -2,12 +2,8 @@ import React from 'react'
 
 const Navigation = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">RVisions</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
+      <a className="navbar-brand" href="#Home" onClick={()=>props.setCurrentPage("Home")}><img src="../../images/R_Visions_Medical_Staffing_PNG.png" title="logo" width="200" height="60" class="block" alt="R-Visions logo"></img></a>
     
     <ul className="navbar-nav">
       <li className="nav-item">
@@ -20,8 +16,8 @@ const Navigation = (props) => {
         <a className="nav-link" href="#ContactUs"  onClick={()=>props.setCurrentPage("ContactUs")}>Contact</a>
       </li>
       <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+      <a className="nav-link dropdown-toggle" href="#Nothing" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+          More
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a className="dropdown-item" href="#TravelingPros"  onClick={()=>props.setCurrentPage("TravelingPros")}>Traveling Professionals</a>
@@ -30,7 +26,6 @@ const Navigation = (props) => {
         </div>
       </li>
     </ul>
-    </div>
   </nav>
   )
 }
