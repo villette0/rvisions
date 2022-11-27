@@ -1,0 +1,14 @@
+/* nav ul li {
+    display: inline;
+}
+
+nav {
+    background-color: green;
+    padding: 5vh;
+    color: white;
+
+} */
+
+.navbar-nav>li {
+    float: none;
+}
