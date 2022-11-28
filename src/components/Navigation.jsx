@@ -3,8 +3,11 @@ import React from 'react'
 const Navigation = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-      <a className="navbar-brand" href="#Home" onClick={()=>props.setCurrentPage("Home")}><img src="../../images/R_Visions_Medical_Staffing_PNG.png" title="logo" width="200" height="60" class="block" alt="R-Visions logo"></img></a>
-    
+      <a className="navbar-brand" href="#Home" onClick={()=>props.setCurrentPage("Home")}><img src="../../images/R_Visions_Medical_Staffing_PNG.png" title="logo" width="220" height="60" class="block" alt="R-Visions logo"></img></a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav">
       <li className="nav-item">
         <a className="nav-link" href = "#Home" onClick={()=>props.setCurrentPage("Home")}>Home</a>
@@ -26,6 +29,7 @@ const Navigation = (props) => {
         </div>
       </li>
     </ul>
+    </div>
   </nav>
   )
 }
