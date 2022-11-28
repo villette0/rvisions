@@ -44,35 +44,35 @@ function App() {
         <title>Rvisions</title>
         <meta name="description" content="Medical Staffing Company"/>
         <meta name="keywords" content="medical,staffing"/>
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="icon" href="/public/favicon.ico" />
       <link
         rel="icon"
         sizes="192x192"
-        href="%PUBLIC_URL%/android-chrome-192X192.png"
+        href="/public/android-chrome-192X192.png"
       />
       <link
         rel="icon"
         sizes="512x512"
-        href="%PUBLIC_URL%/android-chrome-512X512.png"
+        href="/public/android-chrome-512X512.png"
       />
         <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="%PUBLIC_URL%/apple-touch-icon.png"
+        href="/public/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="%PUBLIC_URL%/favicon-32x32.png"
+        href="/public/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="%PUBLIC_URL%/favicon-16x16.png"
+        href="/public/favicon-16x16.png"
       />
-      <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+      <link rel="manifest" href="/public/site.webmanifest" />
       </Helmet>
 
         <HelmetProvider>
