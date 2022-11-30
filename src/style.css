@@ -27,3 +27,23 @@ nav a {
     font-size: 12vh;
     line-height: 95%;
   }
+
+  .clickable-text a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .clickable-text a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .clickable-text a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .clickable-text a:active {
+    text-decoration: underline;
+    color: white;
+  }
