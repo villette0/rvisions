@@ -8,10 +8,10 @@ const Home = () => {
         <img class="d-block w-100" src="../../images/travel.png" alt="First slide" />
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../../images/mountainConquered.jpg" alt="Second slide" />
+        <img class="d-block w-100" src="../../images/mountainConquered.png" alt="Second slide" />
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../../images/loveyourjob.jpg" alt="Third slide" />
+        <img class="d-block w-100" src="../../images/loveWhatYouDo.png" alt="Third slide" />
       </div>
       <div class="carousel-item text-container">
         <img class="d-block w-100" src="../../images/teamHands.jpeg" alt="Third slide" />
