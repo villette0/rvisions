@@ -47,3 +47,7 @@ nav a {
     text-decoration: underline;
     color: white;
   }
+
+  .travel-pic {
+    height: 50vh;
+  }

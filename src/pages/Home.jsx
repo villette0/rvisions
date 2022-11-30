@@ -32,6 +32,7 @@ const Home = () => {
   </div>
 
 <div className="home-travel-section">
+  <img class="travel-pic img-fluid float-start" src="../../images/travelstaff.jpg" alt="Travelling Staff" />
   <h2>Traveling Professionals</h2>
   <p>We’re not your average company. We are innovative and have been a leader for over 15 years. We offer nationwide placement and we are your team. We thrive on finding an assignment that fits the uniqueness in you. One that elevates your career to a new professional level. One that truly contributes to meeting your goals. Create your account to log in to our current nationwide and exclusive offerings.</p>
 </div>
