@@ -13,8 +13,11 @@ const Home = () => {
       <div class="carousel-item">
         <img class="d-block w-100" src="../../images/loveyourjob.jpg" alt="Third slide" />
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item text-container">
         <img class="d-block w-100" src="../../images/teamHands.jpeg" alt="Third slide" />
+        <div class="clickable-text">
+        <a href="https://ctms.contingenttalentmanagement.com/instaffing/WorkforcePortal/login.cfm">Join<br/>Us<br/>Today</a>
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

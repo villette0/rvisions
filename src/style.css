@@ -12,3 +12,18 @@ justify-content: space-between;
 nav a {
     padding-left: 10px;
 }
+
+.text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.clickable-text {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    font-size: 12vh;
+    line-height: 95%;
+  }
