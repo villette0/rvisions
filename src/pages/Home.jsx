@@ -32,24 +32,27 @@ const Home = () => {
     </a>
   </div>
 
-<div className="home-travel-section  d-flex align-items-center">
-  <img class="half-pic float-start" src="../../images/travelstaff.jpg" alt="Travelling Staff" />
+<div className="home-travel-section  d-sm-block d-lg-flex align-items-center">
+  <div className="travel-float"><img class="half-pic" src="../../images/travelstaff.jpg" alt="Travelling Staff"/></div>
   <div className="home-travel-text">
   <h2>Traveling Professionals</h2>
   <p>We’re not your average company. We are innovative and have been a leader for over 15 years. We offer nationwide placement and we are your team. We thrive on finding an assignment that fits the uniqueness in you. One that elevates your career to a new professional level. One that truly contributes to meeting your goals. Create your account to log in to our current nationwide and exclusive offerings.</p>
   </div>
 </div>
 
-<div className="home-hospital-section d-flex align-items-center">
+<div className="home-hospital-section d-sm-block d-lg-flex  align-items-center">
+  {/* show this image only when small screen */}
+<div className="hospital-float d-lg-none d-sm-block"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
 <div className="home-hospital-text">
 <h2>Hospitals, Facilities & Clients</h2>
 <p>We provide your facility with an experienced professional that is committed to quality outcomes. We are flexible. We are the company that listens to your specific needs.</p>
 </div>
-<img class="half-pic float-end" src="../../images/hospital.jpg" alt="Hospital" />
+  {/* show this image only when large screen */}
+<div className="hospital-float d-lg-block d-none"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
 </div>
 
-<div className="home-about-section d-flex align-items-center">
-<img class="half-pic float-start" src="../../images/aboutbusiness.jpg" alt="Business Concept" />
+<div className="home-about-section d-sm-block d-lg-flex align-items-center ">
+<div className="business-float"><img class="half-pic" src="../../images/aboutbusiness.jpg" alt="Business Concept" /></div>
 <div className="home-about-text">
 <h2>About Us</h2>
 <p>R Visions, is about “your vision”. You may be a nurse that needs flexible hours, block scheduling, or a weekly guarantee. You may be a facility that needs the same. Our job is to get all your “visions” met.</p>
