@@ -1,4 +1,6 @@
-/* Justify spacing of navbar
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+
+/* Justify spacing of navbar:
 .navbar-nav,
 .mr-auto {
 flex: 1;
@@ -8,7 +10,83 @@ justify-content: space-between;
 }
  */
 
+.whole-site {
+    font-family: 'Gothic A1', sans-serif;
+ } 
+
 
 nav a {
     padding-left: 10px;
+}
+
+.text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.clickable-text {
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    font-size: 12vh;
+    line-height: 95%;
+  }
+
+  .clickable-text a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .clickable-text a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .clickable-text a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .clickable-text a:active {
+    text-decoration: underline;
+    color: white;
+  }
+
+.half-pic {
+    width: 50vw;
+}
+
+.home-travel-section {
+    background-color: rgb(65, 168, 202);
+    height: 70vh;
+    color: white;
+}
+
+.home-hospital-section {
+    background-color: rgb(12, 86, 58);
+    height: 70vh;
+    color: white;
+}
+
+.home-about-section {
+    background-color: rgb(65, 168, 202);
+    height: 70vh;
+    color: white;
+}
+
+.home-about-text, .home-travel-text {
+    padding-left: 5vw;
+}
+
+.home-hospital-text {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.footer {
+    background-color: rgb(232, 229, 229);
+    height: 6vh;
+    color: grey;
 }

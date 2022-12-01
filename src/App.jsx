@@ -39,7 +39,7 @@ function App() {
     }
   };
   return (
-    <div>
+    <div className="whole-site">
       <Helmet>
         <title>Rvisions</title>
         <meta name="description" content="Medical Staffing Company"/>
