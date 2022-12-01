@@ -62,18 +62,27 @@ nav a {
     background-color: rgb(65, 168, 202);
     height: 70vh;
     color: white;
+
+    min-height: 100px;
+overflow: hidden;
 }
 
 .home-hospital-section {
     background-color: rgb(12, 86, 58);
     height: 70vh;
     color: white;
+
+    min-height: 100px;
+    overflow: hidden;
 }
 
 .home-about-section {
     background-color: rgb(65, 168, 202);
     height: 70vh;
     color: white;
+
+    min-height: 100px;
+overflow: hidden;
 }
 
 .home-about-text, .home-travel-text {
@@ -89,4 +98,29 @@ nav a {
     background-color: rgb(232, 229, 229);
     height: 6vh;
     color: grey;
+}
+
+.hospital-float {
+    float: right;
+} 
+
+/* Mobile*/
+@media screen 
+and (min-width : 250px) 
+and (max-width : 440px) {
+    .clickable-text {
+        font-size: 6vh;
+    }
+    .home-travel-section, .home-hospital-section, .home-about-section {
+        height: auto;
+        padding: 2vh 2vw;
+    }
+    .home-about-text, .home-travel-text {
+        padding-top: 1vh;
+    }
+    .travel-float, .business-float{
+        padding-left: 2vw;
+        margin-right: 3vw;
+        float: left;
+    }
 }
