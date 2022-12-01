@@ -32,7 +32,7 @@ const Home = () => {
     </a>
   </div>
 
-<div className="home-travel-section  d-sm-block d-lg-flex align-items-center">
+<div className="home-travel-section  d-sm-block d-md-flex align-items-center">
   <div className="travel-float"><img class="half-pic" src="../../images/travelstaff.jpg" alt="Travelling Staff"/></div>
   <div className="home-travel-text">
   <h2>Traveling Professionals</h2>
@@ -40,18 +40,18 @@ const Home = () => {
   </div>
 </div>
 
-<div className="home-hospital-section d-sm-block d-lg-flex  align-items-center">
+<div className="home-hospital-section d-sm-block d-md-flex  align-items-center">
   {/* show this image only when small screen */}
-<div className="hospital-float d-lg-none d-sm-block"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
+<div className="hospital-float small-hosp d-md-none d-sm-block"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
 <div className="home-hospital-text">
 <h2>Hospitals, Facilities & Clients</h2>
 <p>We provide your facility with an experienced professional that is committed to quality outcomes. We are flexible. We are the company that listens to your specific needs.</p>
 </div>
   {/* show this image only when large screen */}
-<div className="hospital-float d-lg-block d-none"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
+<div className="hospital-float d-md-block d-none"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
 </div>
 
-<div className="home-about-section d-sm-block d-lg-flex align-items-center ">
+<div className="home-about-section d-sm-block d-md-flex align-items-center ">
 <div className="business-float"><img class="half-pic" src="../../images/aboutbusiness.jpg" alt="Business Concept" /></div>
 <div className="home-about-text">
 <h2>About Us</h2>
