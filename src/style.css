@@ -10,6 +10,12 @@ justify-content: space-between;
 }
  */
 
+ :root {
+    --green: rgb(12, 86, 58);
+    --teal: rgb(125, 181, 192);   /* rgb(65, 168, 202) */
+  }
+
+
 .whole-site {
     font-family: 'Gothic A1', sans-serif;
  } 
@@ -61,16 +67,86 @@ justify-content: space-between;
     width: 50vw;
 }
 
-.home h2 {
-    color: white;
+.teal-link {
+  background-image: linear-gradient(
+    to right,
+    var(--teal),
+    var(--teal) 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.home h2:hover{
-    color: gray;
+.teal-link:before{
+  content: '';
+  background: var(--teal);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
+.teal-link:hover {
+ background-position: 0;
+}
+
+.teal-link:hover::before{
+  width: 100%;
+}
+
+
+.green-link {
+    background-image: linear-gradient(
+      to right,
+      var(--green),
+      var(--green) 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .green-link:before{
+    content: '';
+    background: var(--green);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .green-link:hover {
+   background-position: 0;
+  }
+  
+  .green-link:hover::before{
+    width: 100%;
+  }
+
 
 .home-travel-section {
-    background-color: rgb(65, 168, 202);
+    background-color: var(--teal);
     height: 70vh;
     color: white;
 
@@ -79,7 +155,7 @@ overflow: hidden;
 }
 
 .home-hospital-section {
-    background-color: rgb(12, 86, 58);
+    background-color: var(--green);
     height: 70vh;
     color: white;
 
@@ -88,7 +164,7 @@ overflow: hidden;
 }
 
 .home-about-section {
-    background-color: rgb(65, 168, 202);
+    background-color: var(--teal);
     height: 70vh;
     color: white;
 
