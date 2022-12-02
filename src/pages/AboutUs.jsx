@@ -1,7 +1,29 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async';
+// import {useRef, useEffect, useState} from 'react';
+
+// Converting something like this to react: https://codepen.io/derekjp/pen/gaWxNd
 
 const AboutUs = () => {
+
+    // const [headerRV, setHeaderRV] = useState(false);
+    // const [color, setColor] = useState(false);
+  
+    // const changeColor = () => {
+    //   if (window.scrollY >= 80) {
+    //     setHeaderRV(true);
+    //     setColor('black');
+    //   } else {
+    //     setHeaderRV(false);
+    //     setColor('white');
+    //   }
+    // };
+  
+    // useEffect(() => {
+    //   window.addEventListener('scroll', changeColor, true);
+    //   return () => window.removeEventListener('scroll', changeColor);
+    // }, []);
+
 
   return (    
     <div className="about">
@@ -10,9 +32,12 @@ const AboutUs = () => {
     <meta name='description' content='About Rvisions' />
     </Helmet>
 
-    <img src="./images/suitHollowgraph.jpeg" alt="Hands holding silhouettes of people"></img>
+   
+        <img className="info-hero" src="./images/suitHollowgraph.jpeg" alt="Hands holding silhouettes of people"></img>
 
+        {/* className={color} */}
         <h2>R Visions Medical Staffing, LLC</h2>
+
         <h3><em>Leading the Industry with Innovative Travel Opportunities</em></h3>
 
           <p>At R Visions, we offer a diverse and growing array of both temporary and permanent placement opportunities throughout the country. We provide these services through direct relationships with hospitals, providers and our partnerships with the top Vendor/Manager companies in the nation.<br/>
@@ -26,7 +51,6 @@ const AboutUs = () => {
           For more information on our services contact us.
           info@rvisions.org <br/>
           <br/>
-
           Thank you for visiting our web site home, we look forward to working with you!
           </p>
     
