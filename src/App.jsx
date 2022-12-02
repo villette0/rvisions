@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
+// Renamed to router
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from "react-helmet";
@@ -14,30 +16,8 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 
 import "./style.css"
-// import logo from './logo.svg';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
-  const handleChange = () => {
-    if (currentPage === "Home") {
-      return <Home/>
-    }
-    if (currentPage === "TravelingPros") {
-      return <TravelingPros/>
-    }
-    if (currentPage === "Hospitals") {
-      return <Hospitals/>
-    } 
-    if (currentPage === "Meet") {
-      return <Meet/>
-    } 
-    if (currentPage === "AboutUs") {
-      return <AboutUs/>
-    } 
-    if (currentPage === "ContactUs") {
-      return <ContactUs/>
-    }
-  };
   return (
     <div className="whole-site">
       <Helmet>
@@ -76,9 +56,21 @@ function App() {
       </Helmet>
 
         <HelmetProvider>
-        <Navigation setCurrentPage={setCurrentPage}/>
-        {handleChange()}
-        <Footer setCurrentPage={setCurrentPage}/>
+          <Router>
+          <div className="App">
+          <Navigation/>
+            <Routes>
+            <Route path="/" exact element={<Home/>}/>
+            <Route path="/home" element={<Home/>}/>  
+            <Route path="/about" element={<AboutUs/>}/>
+            <Route path="/contact" element={<ContactUs/>}/>
+            <Route path="/travelingprofessionals" element={<TravelingPros/>}/>
+            <Route path="/hospitals" element={<Hospitals/>}/>
+            <Route path="/meet" element={<Meet/>}/>  
+            </Routes>    
+          <Footer/>
+          </div>
+          </Router>
         </HelmetProvider>
     </div>
   );

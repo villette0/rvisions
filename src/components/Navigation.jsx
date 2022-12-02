@@ -1,31 +1,60 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light"> 
-      <a className="navbar-brand" href="#Home" onClick={()=>props.setCurrentPage("Home")}><img src="../../images/R_Visions_Medical_Staffing_PNG.png" title="logo" width="220" height="60" class="block" alt="R-Visions logo"></img></a>
+      <Link to ="/home">
+      <img className="navbar-brand" src="../../images/R_Visions_Medical_Staffing_PNG.png" title="logo" width="220" height="60" class="block" alt="R-Visions logo"></img>
+      </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
+      <span className="navbar-toggler-icon"></span>
+      </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav">
+      
+      <Link to="/home" style={{ textDecoration: 'none' }}>
       <li className="nav-item">
-        <a className="nav-link" href = "#Home" onClick={()=>props.setCurrentPage("Home")}>Home</a>
+      <div className="nav-link">
+        Home
+      </div>
       </li>
+      </Link>
+
+      <Link to="/about" style={{ textDecoration: 'none' }}>
       <li className="nav-item">
-        <a className="nav-link" href="#AboutUs"  onClick={()=>props.setCurrentPage("AboutUs")}>About</a>
+      <div className="nav-link">
+        About
+      </div>
       </li>
+      </Link>
+
+      <Link to="/contact" style={{ textDecoration: 'none' }}>
       <li className="nav-item">
-        <a className="nav-link" href="#ContactUs"  onClick={()=>props.setCurrentPage("ContactUs")}>Contact</a>
+      <div className="nav-link">
+        Contact
+      </div>
       </li>
+      </Link>
+
       <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" href="#Nothing" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
           More
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#TravelingPros"  onClick={()=>props.setCurrentPage("TravelingPros")}>Traveling Professionals</a>
-          <a className="dropdown-item" href="#Hospitals"  onClick={()=>props.setCurrentPage("Hospitals")}>Hospitals, Facilities, & Clients</a>
-          <a className="dropdown-item" href="#Meet"  onClick={()=>props.setCurrentPage("Meet")}>Meet R Visions</a>
+          <ul>
+            <Link to="/travelingprofessionals" style={{ textDecoration: 'none' }}>
+              <li className="dropdown-item">Traveling Professionals</li>
+            </Link>
+
+            <Link to="/hospitals" style={{ textDecoration: 'none' }}>
+              <li className="dropdown-item">Hospitals, Facilities, & Clients</li>
+            </Link>
+
+            <Link to="/meet" style={{ textDecoration: 'none' }}>
+              <li className="dropdown-item">Meet R Visions</li>
+            </Link>
+          </ul>
         </div>
       </li>
     </ul>
