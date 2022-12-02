@@ -18,8 +18,8 @@ justify-content: space-between;
     font-size: 2.8vh;
 }
 
-nav a {
-    padding-left: 10px;
+.nav-item {
+    padding-left: 2vw;
 }
 
 .text-container {
@@ -59,6 +59,14 @@ nav a {
 
 .half-pic {
     width: 50vw;
+}
+
+.home h2 {
+    color: white;
+}
+
+.home h2:hover{
+    color: gray;
 }
 
 .home-travel-section {

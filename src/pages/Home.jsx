@@ -1,10 +1,10 @@
-import React from 'react'
+import React  from 'react'
+import {Link} from 'react-router-dom'
 
-// I need to pass these props down from app.jsx grandparent or navigation parent
-const Home = (props) => {
+// How do I route my page links here
+const Home = () => {
   return (
-<div> 
-
+<div className="home"> 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -36,7 +36,9 @@ const Home = (props) => {
 <div className="home-travel-section  d-sm-block d-md-flex align-items-center">
   <div className="travel-float"><img class="half-pic" src="../../images/travelstaff.jpg" alt="Travelling Staff"/></div>
   <div className="home-travel-text">
-  <a href="#TravelingPros"  onClick={()=>props.setCurrentPage("TravelingPros")}><h2>Traveling Professionals</h2></a>
+  <Link to="/travelingprofessionals" style={{ textDecoration: 'none' }}>
+  <h2>Traveling Professionals</h2>
+  </Link>
   <p>We’re not your average company. We are innovative and have been a leader for over 15 years. We offer nationwide placement and we are your team. We thrive on finding an assignment that fits the uniqueness in you. One that elevates your career to a new professional level. One that truly contributes to meeting your goals. Create your account to log in to our current nationwide and exclusive offerings.</p>
   </div>
 </div>
@@ -45,7 +47,9 @@ const Home = (props) => {
   {/* show this image only when small screen */}
 <div className="hospital-float small-hosp d-md-none d-sm-block"><img class="half-pic" src="../../images/hospital.jpg" alt="Hospital"/></div>
 <div className="home-hospital-text">
-<a href="#Hospitals"  onClick={()=>props.setCurrentPage("Hospitals")}><h2>Hospitals, Facilities & Clients</h2></a>
+<Link to="/hospitals" style={{ textDecoration: 'none' }}>
+<h2>Hospitals, Facilities & Clients</h2>
+</Link>
 <p>We provide your facility with an experienced professional that is committed to quality outcomes. We are flexible. We are the company that listens to your specific needs.</p>
 </div>
   {/* show this image only when large screen */}
@@ -55,7 +59,9 @@ const Home = (props) => {
 <div className="home-about-section d-sm-block d-md-flex align-items-center ">
 <div className="business-float"><img class="half-pic" src="../../images/aboutbusiness.jpg" alt="Business Concept" /></div>
 <div className="home-about-text">
-<a href="#AboutUs"  onClick={()=>props.setCurrentPage("AboutUs")}><h2>About Us</h2></a>
+<Link to="/about" style={{ textDecoration: 'none' }}>
+<h2>About Us</h2>
+</Link>
 <p>R Visions, is about “your vision”. You may be a nurse that needs flexible hours, block scheduling, or a weekly guarantee. You may be a facility that needs the same. Our job is to get all your “visions” met.</p>
 </div>
 </div>
